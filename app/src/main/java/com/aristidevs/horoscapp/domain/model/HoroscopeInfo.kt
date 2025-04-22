@@ -2,6 +2,7 @@ package com.aristidevs.horoscapp.domain.model
 
 import com.aristidevs.horoscapp.R
 
+/***********************************************************************/
 sealed class HoroscopeInfo(val img: Int, val name: Int) {
     data object Aries : HoroscopeInfo(R.drawable.aries, R.string.aries)
     data object Taurus : HoroscopeInfo(R.drawable.tauro, R.string.taurus)

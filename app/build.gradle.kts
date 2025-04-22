@@ -53,6 +53,7 @@ android {
 
 dependencies {
     val navVersion = "2.8.9"
+    val cameraVersion = "1.4.2"
 
     implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
     implementation("androidx.navigation:navigation-ui-ktx:$navVersion")
@@ -61,6 +62,14 @@ dependencies {
     implementation("com.google.dagger:hilt-android:2.48")
     kapt("com.google.dagger:hilt-compiler:2.48")
 
+    //Camera
+    implementation("androidx.camera:camera-core:${cameraVersion}")
+    implementation("androidx.camera:camera-camera2:${cameraVersion}")
+    implementation("androidx.camera:camera-lifecycle:${cameraVersion}")
+    implementation("androidx.camera:camera-view:${cameraVersion}")
+    implementation("androidx.camera:camera-extensions:${cameraVersion}")
+
+    
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.3.1")

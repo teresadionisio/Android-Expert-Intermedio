@@ -1,5 +1,6 @@
 package com.aristidevs.horoscapp.domain.model
 
+/***********************************************************************/
 enum class HoroscopeModel {
     Aries,
     Taurus,

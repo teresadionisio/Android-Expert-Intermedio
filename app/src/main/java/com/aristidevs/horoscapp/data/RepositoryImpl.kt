@@ -6,6 +6,7 @@ import com.aristidevs.horoscapp.domain.Repository
 import com.aristidevs.horoscapp.domain.model.PredictionModel
 import javax.inject.Inject
 
+/***************************************************************************************************/
 class RepositoryImpl @Inject constructor(private val apiService: HoroscopeApiService) : Repository {
     override suspend fun getPrediction(sign: String): PredictionModel? {
         runCatching { apiService.getHoroscope(sign) }

@@ -15,6 +15,7 @@ import com.aristidevs.horoscapp.domain.model.HoroscopeInfo.Taurus
 import com.aristidevs.horoscapp.domain.model.HoroscopeInfo.Virgo
 import javax.inject.Inject
 
+/**************************************************************************/
 class HoroscopeProvider @Inject constructor() {
     fun getHoroscopes(): List<HoroscopeInfo> {
         return listOf(
